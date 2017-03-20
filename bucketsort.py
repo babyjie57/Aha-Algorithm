@@ -9,7 +9,10 @@ def bucketsort(arr):
     return result
 
 if __name__ == "__main__":
-    arr = [1,2,3,4,5,6,7,8,8,7,7,7,7,8,9,0,2,1]
+    n = raw_input("please input a num: ")
+    arr = []
+    for i in range(int(n)):
+        arr.append(int(raw_input("please input n numbers:  ")))
     arr = bucketsort(arr)
     for i in range(len(arr)):
         if arr[i] != 0:
